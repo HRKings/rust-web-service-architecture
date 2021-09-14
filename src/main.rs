@@ -14,6 +14,6 @@ async fn main() {
         .with(warp::cors().allow_any_origin());
 
     warp::serve(routes)
-        .run(([127, 0, 0, 1], 3030))
+        .run(([0, 0, 0, 0], 8080))
         .await;
 }
